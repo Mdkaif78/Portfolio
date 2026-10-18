@@ -3,7 +3,7 @@ import {
   ArrowUp, 
   Mail
 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './Icons';
+import { GithubIcon, InstagramIcon, LinkedinIcon } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 export const Footer: React.FC = () => {
@@ -54,6 +54,16 @@ export const Footer: React.FC = () => {
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-3.5 h-3.5" />
+              </a>
+
+              <a
+                href={social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded bg-[#131F33] border border-[#30405B] text-[#ACB9CE] hover:text-[#F8F7F4] hover:border-[#91ACFF] transition-colors"
+                aria-label="Instagram"
+              >
+                <InstagramIcon className="w-3.5 h-3.5" />
               </a>
 
               <a

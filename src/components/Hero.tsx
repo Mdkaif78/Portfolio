@@ -8,7 +8,7 @@ import {
   Sparkles,
   Terminal
 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './Icons';
+import { GithubIcon, InstagramIcon, LinkedinIcon } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 interface HeroProps {
@@ -111,6 +111,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
                   title="View LinkedIn (Editable URL)"
                 >
                   <LinkedinIcon className="w-4 h-4" />
+                </a>
+
+                <a
+                  href={social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded bg-[#FFFFFF] dark:bg-[#18243A] border border-[#DDE2EB] dark:border-[#30405B] text-[#59677C] dark:text-[#ACB9CE] hover:text-[#17243B] dark:hover:text-[#F8F7F4] hover:border-[#315DDC] dark:hover:border-[#91ACFF] transition-colors"
+                  aria-label="Instagram Profile"
+                  title="View Instagram"
+                >
+                  <InstagramIcon className="w-4 h-4" />
                 </a>
 
                 <a

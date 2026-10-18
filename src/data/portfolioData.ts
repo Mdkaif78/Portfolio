@@ -65,6 +65,7 @@ export interface PortfolioData {
     github: string;
     linkedin: string;
     email: string;
+    instagram: string;
   };
   skills: SkillItem[];
   projects: ProjectItem[];
@@ -100,10 +101,10 @@ export const portfolioData: PortfolioData = {
   },
 
   social: {
-    // TIP: Replace these placeholders with your real profile URLs
-    github: "https://github.com/MohammadKaif", 
-    linkedin: "https://www.linkedin.com/in/mohammad-kaif", 
-    email: "mohammadkaif.contact@example.com", // Replace with your real contact email
+    github: "https://github.com/Mdkaif78",
+    linkedin: "https://www.linkedin.com/in/mohammad-kaif-533a273a4?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    email: "kaifmd2078@gmail.com",
+    instagram: "https://www.instagram.com/kaifu_say.s?xtok=MWxxc29mYTFoajJycA%3D%3D&utm_source=qr",
   },
 
   skills: [

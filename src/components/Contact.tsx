@@ -9,7 +9,7 @@ import {
   ExternalLink,
   MessageSquare
 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './Icons';
+import { GithubIcon, InstagramIcon, LinkedinIcon } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 export const Contact: React.FC = () => {
@@ -96,7 +96,7 @@ export const Contact: React.FC = () => {
                   Direct Contact Information
                 </h3>
                 <p className="text-xs sm:text-sm text-[#59677C] dark:text-[#ACB9CE] leading-relaxed">
-                  Feel free to reach out directly via email, connect on LinkedIn, or review my code activity on GitHub.
+                  Feel free to reach out directly via email, connect on LinkedIn, view my GitHub work, or follow my visual updates on Instagram.
                 </p>
               </div>
 
@@ -123,8 +123,8 @@ export const Contact: React.FC = () => {
                 </a>
               </div>
 
-              {/* LinkedIn & GitHub */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              {/* LinkedIn, GitHub & Instagram */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 <a
                   href={social.linkedin}
                   target="_blank"
@@ -152,6 +152,22 @@ export const Contact: React.FC = () => {
                     <div>
                       <div className="text-[11px] font-mono text-[#59677C] dark:text-[#ACB9CE]">Source Code</div>
                       <div className="text-xs font-bold text-[#17243B] dark:text-[#F8F7F4]">GitHub</div>
+                    </div>
+                  </div>
+                  <ExternalLink className="w-3 h-3 text-[#59677C] dark:text-[#ACB9CE]" />
+                </a>
+
+                <a
+                  href={social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3.5 rounded bg-[#F8F7F4] dark:bg-[#131F33] border border-[#DDE2EB] dark:border-[#30405B] hover:border-[#315DDC] dark:hover:border-[#91ACFF] transition-colors flex items-center justify-between"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <InstagramIcon className="w-4 h-4 text-[#315DDC] dark:text-[#91ACFF]" />
+                    <div>
+                      <div className="text-[11px] font-mono text-[#59677C] dark:text-[#ACB9CE]">Visual</div>
+                      <div className="text-xs font-bold text-[#17243B] dark:text-[#F8F7F4]">Instagram</div>
                     </div>
                   </div>
                   <ExternalLink className="w-3 h-3 text-[#59677C] dark:text-[#ACB9CE]" />
